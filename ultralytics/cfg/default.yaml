@@ -1,11 +1,12 @@
 # Ultralytics YOLO 🚀, AGPL-3.0 license
 # Default training settings and hyperparameters for medium-augmentation COCO training
 
-task: detect # (str) YOLO task, i.e. detect, segment, classify, pose
-mode: train # (str) YOLO mode, i.e. train, val, predict, export, track, benchmark
+task: obb # (str) YOLO task, i.e. detect, segment, classify, pose
+mode: export # (str) YOLO mode, i.e. train, val, predict, export, track, benchmark
 
 # Train settings -------------------------------------------------------------------------------------------------------
-model: yolov8n.pt # (str, optional) path to model file, i.e. yolov8n.pt, yolov8n.yaml
+model: /home/hello/fish_and_vegetable/submodules/yolo8_export/runs/obb/train/weights/best.pt # (str, optional) path to model file, i.e. yolov8n.pt, yolov8n.yaml
+# model: /home/hello/fish_and_vegetable/submodules/models/yolov8n-obb.pt 
 data: # (str, optional) path to data file, i.e. coco8.yaml
 epochs: 100 # (int) number of epochs to train for
 time: # (float, optional) number of hours to train for, overrides epochs if supplied
